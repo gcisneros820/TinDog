@@ -133,3 +133,17 @@ p {
 .pricing-column {
   padding: 3% 2%;
 }
+
+/* when our viewport is 1028px or smaller:
+- center text
+- change title img position back to static
+- rotate title img into upright position */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
